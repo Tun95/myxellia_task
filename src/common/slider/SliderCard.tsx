@@ -12,11 +12,6 @@ function SliderCards({ item, index }: SliderCardProps) {
           <div className="title">
             <h4>{item.title}</h4>
           </div>
-          <div className="description">
-            <small>
-              <p>{item.description}</p>
-            </small>
-          </div>
         </div>
       </div>
     </div>

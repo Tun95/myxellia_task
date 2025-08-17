@@ -37,14 +37,17 @@ function DashboardScreen() {
             </div>
           </div>
           <div className="slider_section">
-            <div className="most_clicked">
+            <div className="slider_blocks">
               <SliderBox />
+              <p className="main_title">Most Clicked</p>
             </div>
-            <div className="most_clicked">
+            <div className="slider_blocks">
               <SliderBox />
+              <p className="main_title">most wATCHLISTED</p>
             </div>
-            <div className="most_clicked">
+            <div className="slider_blocks">
               <SliderBox />
+              <p className="main_title">HOTTEST LISTING</p>
             </div>
           </div>
         </div>

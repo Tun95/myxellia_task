@@ -10,21 +10,15 @@ import "./styles.scss";
 const data = [
   {
     img: s1,
-    title: "Latest News & Updates",
-    description:
-      "Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.",
+    title: "Urban Prime Plaza Premiere",
   },
   {
     img: s1,
-    title: "Latest News & Updates",
-    description:
-      "Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.",
+    title: "Urban Prime Plaza Premiere",
   },
   {
     img: s1,
-    title: "Latest News & Updates",
-    description:
-      "Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.",
+    title: "Urban Prime Plaza Premiere",
   },
 ];
 

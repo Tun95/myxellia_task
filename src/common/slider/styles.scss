@@ -5,6 +5,8 @@
     position: relative;
     .slider_card {
       height: 100%;
+      overflow: hidden;
+      border-radius: 15px;
       .slider_content {
         position: relative;
         height: 100%;
@@ -19,11 +21,19 @@
         }
         .title_desc {
           position: absolute;
-          bottom: 30px;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
           color: var(--color-white);
           padding: 0px 20px;
-          &.title_desc_dark {
-            color: var(--color-text);
+          background: linear-gradient(
+            183.45deg,
+            rgba(0, 0, 0, 0.05) 41.18%,
+            rgba(0, 0, 0, 0.6) 100.3%
+          );
+          .title {
+            position: absolute;
+            bottom: 33px;
           }
         }
       }

@@ -55,9 +55,19 @@
       gap: 20px;
       width: 100%;
       margin-top: 20px;
-      .most_clicked {
+      .slider_blocks {
         width: 100%;
         overflow: hidden;
+        position: relative;
+        .main_title {
+          text-transform: uppercase;
+          font-weight: 400;
+          position: absolute;
+          top: 75%;
+          left: 20px;
+          color: var(--color-white);
+          font-size: 15px;
+        }
       }
 
       /* Responsive adjustments */
