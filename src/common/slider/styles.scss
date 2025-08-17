@@ -42,20 +42,22 @@
 }
 .slick-dots {
   li {
-    width: 10px; // Default width for non-active dots
+    width: 8px; // Default width for non-active dots
+
     position: relative;
     bottom: 30px;
     &.slick-active {
-      width: 20px; // Adjust width for the active dot
+      width: 8px;
+      height: 8px;
       button {
         &::before {
           font-size: 0;
           content: "";
           display: block;
-          width: 20px;
-          height: 4px;
+          width: 8px;
+          height: 8px;
           background: var(--color-sl-w);
-          border-radius: 2px;
+          border-radius: 50%;
         }
       }
     }
@@ -64,10 +66,10 @@
         font-size: 0;
         content: "";
         display: block;
-        width: 10px;
-        height: 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
         background: var(--color-sl-bg) !important;
-        border-radius: 2px;
       }
     }
   }

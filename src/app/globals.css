@@ -27,6 +27,8 @@
   --color-text: #333333;
 
   --color-sl-w: #ffffff;
+  --color-sl-bg: #f1f5f9;
+  --color-sl-br: #f1f5f9;
 
   --transition: all 400ms ease;
   --container-width-lg: 85%;
