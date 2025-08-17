@@ -1,0 +1,58 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-stroke);
+  border-radius: 12px;
+  height: 100%;
+  background-color: var(--color-white);
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title_info {
+      text-wrap: nowrap;
+      .title {
+        color: var(--color-deep-gray);
+        font-size: 13px;
+        text-wrap: nowrap;
+      }
+    }
+    .counter_percentage {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      .counter {
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .percentage_section {
+        gap: 10px;
+        .percentage {
+          font-size: 12px;
+          gap: 5px;
+          .percentage_icon {
+            font-size: 15px;
+          }
+          &.increase {
+            color: var(--color-green);
+          }
+          &.decrease {
+            color: var(--color-red);
+          }
+        }
+      }
+    }
+    .icon {
+      font-size: 28px;
+      padding: 5px;
+
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+  }
+}

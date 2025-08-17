@@ -1,0 +1,28 @@
+.navbar {
+  background-color: var(--color-black);
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  .content {
+    height: 60px;
+    // padding: 5px 10px;
+    .nav_icons {
+      gap: 20px;
+      .icon {
+        color: var(--color-white);
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+      .user_name_icon {
+        background-color: var(--color-white);
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: var(--color-black);
+      }
+    }
+  }
+}
