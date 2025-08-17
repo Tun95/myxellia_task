@@ -4,7 +4,7 @@ import Menubar from "@/common/menubar/Menubar";
 import SalesOverview from "@/components/dashboard/salesoverview/SalesOverview";
 import ListingOverview from "@/components/dashboard/listingoverview/ListingOverview";
 import UsersOverview from "@/components/dashboard/useroverview/UsersOverview";
-import SliderBox from "@/common/slider/SilderBox";
+import SliderBox from "@/common/slider/Silder";
 
 function DashboardScreen() {
   return (
