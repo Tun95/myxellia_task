@@ -1,8 +1,10 @@
+"use client";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderCards from "./SliderCard";
 import s1 from "@/assets/images/s1.jpg";
+import React from "react";
 
 const data = [
   {

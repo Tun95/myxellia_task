@@ -4,6 +4,7 @@ import Menubar from "@/common/menubar/Menubar";
 import SalesOverview from "@/components/dashboard/salesoverview/SalesOverview";
 import ListingOverview from "@/components/dashboard/listingoverview/ListingOverview";
 import UsersOverview from "@/components/dashboard/useroverview/UsersOverview";
+import SliderBox from "@/common/slider/SliderBox";
 
 function DashboardScreen() {
   return (
@@ -37,7 +38,7 @@ function DashboardScreen() {
           </div>
           <div className="slider_contents">
             <div className="most_clicked">
-              {/* <SliderBox /> */}
+              <SliderBox />
             </div>
           </div>
         </div>
