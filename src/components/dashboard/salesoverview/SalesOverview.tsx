@@ -1,5 +1,8 @@
+"use client";
 import Widget from "@/common/widget/Widget";
 import "./styles.scss";
+import { BarChartComponent } from "@/common/chart/BarChart";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function SalesOverview() {
   const TotalInflow = 120000000;
@@ -31,7 +34,9 @@ function SalesOverview() {
           </div>
         </div>
         <div className="bottom d_flex">
-          <div className="left">Chart</div>
+          <div className="left">
+            <BarChartComponent />
+          </div>
           <div className="right">
             <div className="widgets d_grid">
               <Widget TotalInflow={TotalInflow} type="inflow" />

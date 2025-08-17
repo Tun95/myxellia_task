@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "@chakra-ui/charts": "^3.24.2",
+    "@chakra-ui/react": "^3.24.2",
+    "@chakra-ui/theme": "^3.4.6",
+    "@emotion/react": "^11.14.0",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-slick": "^0.31.0",
     "recharts": "^3.1.2",
     "sass": "^1.90.0",

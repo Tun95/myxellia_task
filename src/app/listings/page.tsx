@@ -1,19 +1,10 @@
-import Navbar from "@/common/navbar/Navbar";
-import "./styles.scss";
-import Menubar from "@/common/menubar/Menubar";
+import ListingScreen from "@/screens/listingscreen/ListingScreen";
 
 function page() {
   return (
-    <div className="listing_screen">
-      <div className="listing_content">
-        <div className="nav">
-          <Navbar />
-        </div>
-        <div className="menu">
-          <Menubar />
-        </div>
-      </div>
-    </div>
+    <>
+      <ListingScreen />
+    </>
   );
 }
 
