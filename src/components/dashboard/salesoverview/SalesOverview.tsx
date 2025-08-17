@@ -3,6 +3,10 @@ import Widget from "@/common/widget/Widget";
 import "./styles.scss";
 import { BarChartComponent } from "@/common/chart/BarChart";
 import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
+import {
+  MaterialSymbolsArrowBack2,
+  MaterialSymbolsPlayArrow,
+} from "@/assets/icons/icon";
 
 function SalesOverview() {
   const TotalInflow = 120000000;
@@ -34,10 +38,18 @@ function SalesOverview() {
           </div>
         </div>
         <div className="bottom d_flex">
-          <div className="left bar_chart">
-            <ChakraProvider value={defaultSystem}>
-              <BarChartComponent />
-            </ChakraProvider>
+          <div className="left bar_chart_arrow">
+            <div className="arrow_icon_left l_flex">
+              <MaterialSymbolsArrowBack2 className="icon" />
+            </div>
+            <div className="bar_chart">
+              <ChakraProvider value={defaultSystem}>
+                <BarChartComponent />
+              </ChakraProvider>
+            </div>
+            <div className="arrow_icon_right l_flex">
+              <MaterialSymbolsPlayArrow className="icon" />
+            </div>
           </div>
           <div className="right">
             <div className="widgets d_grid">

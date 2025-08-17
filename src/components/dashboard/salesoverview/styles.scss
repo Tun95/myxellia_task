@@ -55,8 +55,39 @@
     }
     .bottom {
       gap: 15px;
-      .bar_chart {
-        width: 100%;
+      .bar_chart_arrow {
+        width: 105%;
+        position: relative;
+        overflow: hidden;
+        right: 5px;
+        .bar_chart {
+          width: 92%;
+          position: relative;
+          overflow: hidden;
+          overflow-x: hidden;
+          left: 5px;
+        }
+        .arrow_icon_left,
+        .arrow_icon_right {
+          position: absolute;
+          background-color: var(--color-light-gray);
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          cursor: pointer;
+          z-index: 50;
+          .icon {
+            color: var(--color-semi-gray);
+          }
+        }
+        .arrow_icon_left {
+          top: 40%;
+          left: 0px;
+        }
+        .arrow_icon_right {
+          right: -1px;
+          bottom: 48%;
+        }
       }
       /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
       @media screen and (max-width: 850px) {
