@@ -47,7 +47,7 @@ function SalesOverview() {
                 <BarChartComponent />
               </ChakraProvider>
             </div>
-            <div className="arrow_icon_right l_flex">
+            <div className="arrow_icon_right active l_flex">
               <MaterialSymbolsPlayArrow className="icon" />
             </div>
           </div>

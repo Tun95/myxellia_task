@@ -28,7 +28,7 @@
           .main_btn {
             border: 2px solid var(--color-stroke);
             padding: 12px 30px;
-            border-radius: 20px;
+            border-radius: 30px;
             font-size: 14px;
           }
         }
@@ -39,7 +39,7 @@
             font-weight: 300;
             font-size: 14px;
             padding: 7px 15px;
-            border-radius: 5px;
+            border-radius: 8px;
             transition: var(--transition);
             &:hover {
               background-color: var(--color-light-gray);
@@ -79,6 +79,11 @@
           .icon {
             color: var(--color-semi-gray);
           }
+          &.active {
+            .icon {
+              color: var(--color-black);
+            }
+          }
         }
         .arrow_icon_left {
           top: 40%;
@@ -86,12 +91,24 @@
         }
         .arrow_icon_right {
           right: -1px;
-          bottom: 48%;
+          bottom: 47%;
         }
       }
       /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
       @media screen and (max-width: 850px) {
         flex-direction: column;
+
+        .bar_chart_arrow {
+          width: 100%;
+          right: 0px;
+          .bar_chart {
+            width: 95%;
+            left: 0px;
+          }
+          .arrow_icon_right {
+            right: 0px;
+          }
+        }
       }
       /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
       @media screen and (max-width: 520px) {

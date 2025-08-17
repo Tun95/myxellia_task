@@ -30,9 +30,9 @@ const generateData = () => {
   ];
   return months.map((month) => ({
     month,
-    productA: Math.floor(Math.random() * 50) * 1000000,
-    productB: Math.floor(Math.random() * 50) * 1000000,
-    productC: Math.floor(Math.random() * 50) * 1000000,
+    Inflow: Math.floor(Math.random() * 50) * 1000000,
+    MRR: Math.floor(Math.random() * 50) * 1000000,
+    GMV: Math.floor(Math.random() * 50) * 1000000,
   }));
 };
 
@@ -42,9 +42,9 @@ export const BarChartComponent = () => {
   const chart = useChart({
     data: chartData,
     series: [
-      { name: "productA", color: "blue.500" },
-      { name: "productB", color: "green.500" },
-      { name: "productC", color: "orange.500" },
+      { name: "Inflow", color: "blue.500", label: "Inflow" },
+      { name: "MRR", color: "green.500", label: "MRR" },
+      { name: "GMV", color: "red.500", label: "GMV" },
     ],
   });
 
@@ -56,12 +56,10 @@ export const BarChartComponent = () => {
     <Box position="relative" width="100%" right={2}>
       <Chart.Root width="100%" chart={chart} minWidth={550} height={205}>
         <ResponsiveContainer width="100%" minWidth={800} height={100}>
-          <BarChart
-            data={chart.data}
-          >
+          <BarChart data={chart.data}>
             <XAxis
               tickLine={false}
-              axisLine={false} 
+              axisLine={false}
               dataKey={chart.key("month")}
               stroke={chart.color("gray.600")}
             />
@@ -74,7 +72,10 @@ export const BarChartComponent = () => {
             <Tooltip
               cursor={{ fill: chart.color("gray.100") }}
               animationDuration={100}
-              formatter={(value: number) => [`${formatCurrency(value)}`, ""]}
+              formatter={(value: number, name: string) => [
+                `${formatCurrency(value)}`,
+                chart.series.find((item) => item.name === name)?.label || name,
+              ]}
               labelFormatter={(label) => `Month: ${label}`}
             />
 
