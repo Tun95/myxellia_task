@@ -1,5 +1,8 @@
 .dashboard_screen {
+  margin-bottom: 50px;
   .dashboard_content {
+    width: 100%;
+    overflow: hidden;
     .overviews {
       .head {
         margin-top: 20px;
@@ -50,7 +53,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+      width: 100%;
       margin-top: 20px;
+      .most_clicked {
+        width: 100%;
+        overflow: hidden;
+      }
 
       /* Responsive adjustments */
       @media screen and (max-width: 1100px) {
