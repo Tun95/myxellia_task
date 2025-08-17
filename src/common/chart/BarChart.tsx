@@ -1,16 +1,18 @@
+"use client";
 import { Chart, useChart } from "@chakra-ui/charts";
 import {
   Bar,
   BarChart,
   CartesianGrid,
-  Legend,
   Tooltip,
   XAxis,
   YAxis,
   ResponsiveContainer,
 } from "recharts";
-import { useState, useRef } from "react";
-import "./styles.scss";
+import { useRef } from "react";
+import { Box, IconButton } from "@chakra-ui/react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { formatCurrency } from "@/utilities/Util";
 
 // Generate sample data for all months
 const generateData = () => {
@@ -40,6 +42,15 @@ export const BarChartComponent = () => {
   const chartData = generateData();
   const chartRef = useRef<HTMLDivElement>(null);
 
+  const chart = useChart({
+    data: chartData,
+    series: [
+      { name: "productA", color: "blue.500" },
+      { name: "productB", color: "green.500" },
+      { name: "productC", color: "orange.500" },
+    ],
+  });
+
   const scrollLeft = () => {
     if (chartRef.current) {
       chartRef.current.scrollBy({ left: -200, behavior: "smooth" });
@@ -56,69 +67,83 @@ export const BarChartComponent = () => {
     return `${value / 1000000}m`;
   };
 
-  // Define colors manually
-  const colors = {
-    productA: "#3182CE", // blue
-    productB: "#38A169", // green
-    productC: "#DD6B20", // orange
-  };
-
   return (
-    <div className="chart_container">
-      <div className="scroll_buttons left" onClick={scrollLeft}>
-        &lt;
-      </div>
+    <Box position="relative" width="100%" >
+      <IconButton
+        aria-label="Scroll left"
+        onClick={scrollLeft}
+        position="absolute"
+        left={2}
+        top="50%"
+        transform="translateY(-50%)"
+        zIndex={1}
+      >
+        <ChevronLeftIcon />
+      </IconButton>
 
-      <div className="chart_wrapper" ref={chartRef}>
-        <BarChart
-          data={chartData}
-          margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-          width={Math.max(800, chartData.length * 80)}
-        >
-          <CartesianGrid stroke="#E2E8F0" vertical={false} />
-          <XAxis tickLine={false} dataKey="month" stroke="#718096" />
-          <YAxis
-            tickLine={false}
-            stroke="#718096"
-            tickFormatter={formatYAxis}
-            ticks={[0, 10000000, 20000000, 30000000, 40000000, 50000000]}
-          />
-          <Tooltip
-            cursor={{ fill: "#EDF2F7" }}
-            animationDuration={100}
-            formatter={(value: number) => [`$${value.toLocaleString()}`, ""]}
-            labelFormatter={(label) => `Month: ${label}`}
-          />
-          <Legend
-            layout="horizontal"
-            align="center"
-            verticalAlign="bottom"
-            wrapperStyle={{ paddingTop: 20 }}
-          />
-          <Bar
-            dataKey="productA"
-            fill={colors.productA}
-            name="Product A"
-            barSize={20}
-          />
-          <Bar
-            dataKey="productB"
-            fill={colors.productB}
-            name="Product B"
-            barSize={20}
-          />
-          <Bar
-            dataKey="productC"
-            fill={colors.productC}
-            name="Product C"
-            barSize={20}
-          />
-        </BarChart>
-      </div>
+      <Box
+        ref={chartRef}
+        overflowX="auto"
+        overflowY="hidden"
+        css={{
+          "&::-webkit-scrollbar": { display: "none" },
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
+      >
+        <Chart.Root width="100%" chart={chart}>
+          <ResponsiveContainer width="100%" height={200}>
+            <BarChart data={chart.data}>
+              <CartesianGrid
+                stroke={chart.color("gray.200")}
+                vertical={false}
+              />
+              <XAxis
+                tickLine={false}
+                dataKey={chart.key("month")}
+                stroke={chart.color("gray.600")}
+              />
+              <YAxis
+                tickLine={false}
+                stroke={chart.color("gray.600")}
+                tickFormatter={formatYAxis}
+                ticks={[0, 10000000, 20000000, 30000000, 40000000, 50000000]}
+              />
+              <Tooltip
+                cursor={{ fill: chart.color("gray.100") }}
+                animationDuration={100}
+                formatter={(value: number) => [
+                  `${formatCurrency(value)}`,
+                  "",
+                ]}
+                labelFormatter={(label) => `Month: ${label}`}
+              />
 
-      <div className="scroll_buttons right" onClick={scrollRight}>
-        &gt;
-      </div>
-    </div>
+              {chart.series.map((item) => (
+                <Bar
+                  key={item.name}
+                  dataKey={chart.key(item.name)}
+                  fill={chart.color(item.color)}
+                  name={item.name?.replace("product", "Product ")}
+                  barSize={20}
+                />
+              ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </Chart.Root>
+      </Box>
+
+      <IconButton
+        aria-label="Scroll right"
+        onClick={scrollRight}
+        position="absolute"
+        right={2}
+        top="50%"
+        transform="translateY(-50%)"
+        zIndex={1}
+      >
+        <ChevronRightIcon />
+      </IconButton>
+    </Box>
   );
 };

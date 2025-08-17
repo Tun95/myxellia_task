@@ -55,6 +55,9 @@
     }
     .bottom {
       gap: 15px;
+      .bar_chart {
+        width: 100%;
+      }
       /*======= MEDIA QUERIES (SMALL DEVICES) =======*/
       @media screen and (max-width: 850px) {
         flex-direction: column;
