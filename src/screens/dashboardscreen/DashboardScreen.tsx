@@ -36,10 +36,10 @@ function DashboardScreen() {
               </div>
             </div>
           </div>
-          <div className="slider_contents">
-            <div className="most_clicked">
-              <SliderBox />
-            </div>
+          <div className="slider_section ">
+            <SliderBox />
+            <SliderBox />
+            <SliderBox />
           </div>
         </div>
       </div>
