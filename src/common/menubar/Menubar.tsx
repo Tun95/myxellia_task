@@ -5,13 +5,13 @@ import {
   FluentPerson32Filled,
   IonNewspaperOutline,
   IonNewspaper,
-  MaterialSymbolsLightHomeRepairServiceOutline,
   IcSharpHomeRepairService,
   MaterialSymbolsTextAdOutline,
   MaterialSymbolsTextAd,
   MingcuteHome4Fill,
-  FluentHome16Regular,
   SolarMagniferOutline,
+  MaterialSymbolsHomeRepairServiceOutlineSharp,
+  MingcuteHome4Line,
 } from "@/assets/icons/icon";
 import "./styles.scss";
 import Link from "next/link";
@@ -22,14 +22,14 @@ function Menubar() {
 
   const menuItems = [
     {
-      outlineIcon: <FluentHome16Regular className="menu_icon" />,
+      outlineIcon: <MingcuteHome4Line className="menu_icon" />,
       boldIcon: <MingcuteHome4Fill className="menu_icon" />,
       label: "Dashboard",
       path: "/",
     },
     {
       outlineIcon: (
-        <MaterialSymbolsLightHomeRepairServiceOutline className="menu_icon" />
+        <MaterialSymbolsHomeRepairServiceOutlineSharp className="menu_icon" />
       ),
       boldIcon: <IcSharpHomeRepairService className="menu_icon" />,
       label: "Listings",

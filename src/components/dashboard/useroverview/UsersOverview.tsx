@@ -1,4 +1,4 @@
-import { formatNumberCompact, formatNumberCompactIntl } from "@/utilities/Util";
+import { formatNumberCompact } from "@/utilities/Util";
 import "./styles.scss";
 import {
   FluentPerson32Regular,

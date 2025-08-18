@@ -1,10 +1,10 @@
 import {
-  FluentHome16Regular,
   IcBaselineKeyboardArrowRight,
+  SolarHomeOutline,
 } from "@/assets/icons/icon";
 import "./styles.scss";
 import Link from "next/link";
-import { formatNumberCompact, formatNumberCompactIntl } from "@/utilities/Util";
+import { formatNumberCompact } from "@/utilities/Util";
 
 function ListingOverview() {
   return (
@@ -13,7 +13,7 @@ function ListingOverview() {
         <div className="top c_flex">
           <div className="left">
             <div className="head_icon a_flex">
-              <FluentHome16Regular className="icon" />
+              <SolarHomeOutline className="icon" />
               <p>Listings Overview</p>
             </div>
           </div>

@@ -1,9 +1,11 @@
+// DashboardScreen.tsx
 import "./styles.scss";
 import Menubar from "@/common/menubar/Menubar";
 import SalesOverview from "@/components/dashboard/salesoverview/SalesOverview";
 import ListingOverview from "@/components/dashboard/listingoverview/ListingOverview";
 import UsersOverview from "@/components/dashboard/useroverview/UsersOverview";
 import SliderBox from "@/common/slider/SliderBox";
+import { sliderData2Items, sliderData3Items, sliderData5Items } from "@/data/data";
 
 function DashboardScreen() {
   return (
@@ -34,16 +36,16 @@ function DashboardScreen() {
           </div>
           <div className="slider_section">
             <div className="slider_blocks">
-              <SliderBox />
+              <SliderBox data={sliderData2Items} />
               <p className="main_title">Most Clicked</p>
             </div>
             <div className="slider_blocks">
-              <SliderBox />
-              <p className="main_title">most wATCHLISTED</p>
+              <SliderBox data={sliderData3Items} />
+              <p className="main_title">Most Watchlisted</p>
             </div>
             <div className="slider_blocks">
-              <SliderBox />
-              <p className="main_title">HOTTEST LISTING</p>
+              <SliderBox data={sliderData5Items} />
+              <p className="main_title">Hottest Listing</p>
             </div>
           </div>
         </div>
