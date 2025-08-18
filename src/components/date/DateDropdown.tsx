@@ -29,11 +29,15 @@ function DateDropdown() {
                 <Popover.Body className="popover_body">
                   <div className="header c_flex">
                     <div className="box_title a_flex">
-                      <BxArrowBack className="icon" />
+                      <Popover.Trigger asChild>
+                        <BxArrowBack className="icon" />
+                      </Popover.Trigger>
                       <h4>Calender</h4>
                     </div>
                     <div className="close_icon l_flex">
-                      <MaterialSymbolsCloseRounded className="icon" />
+                      <Popover.Trigger asChild>
+                        <MaterialSymbolsCloseRounded className="icon" />
+                      </Popover.Trigger>
                     </div>
                   </div>
                   <div className="date_box">
@@ -41,8 +45,8 @@ function DateDropdown() {
                       onChange={onChange}
                       value={value}
                       className="custom_calendar"
-                      prev2Label={null} 
-                      next2Label={null} 
+                      prev2Label={null}
+                      next2Label={null}
                     />
                   </div>
                 </Popover.Body>
