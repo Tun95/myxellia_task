@@ -97,7 +97,7 @@
 
       &:enabled:hover,
       &:enabled:focus {
-        background-color: var(--color-deep-blue);
+        background-color: var(--color-light-black);
       }
 
       &--now {
@@ -110,12 +110,12 @@
       }
 
       &--active {
-        background-color: var(--color-deep-blue);
+        background-color: var(--color-light-black);
         color: var(--color-white);
 
         &:enabled:hover,
         &:enabled:focus {
-          background-color: var(--color-deep-blue);
+          background-color: var(--color-light-black);
         }
       }
     }
