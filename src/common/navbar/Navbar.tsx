@@ -1,13 +1,12 @@
+"use client";
 import "./styles.scss";
 import logo from "@/assets/images/logo.png";
 import Image from "next/image";
-import {
-  SolarBellBold,
-  SolarCalculatorBold,
-  SolarCalendarBold,
-  SolarChatDotsBold,
-} from "@/assets/icons/icon";
+import { SolarBellBold, SolarChatDotsBold } from "@/assets/icons/icon";
 import Link from "next/link";
+import DateDropdown from "@/components/date/DateDropdown";
+import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
+import BudgetDropdown from "@/components/budget/Budget";
 
 function Navbar() {
   return (
@@ -23,11 +22,15 @@ function Navbar() {
             <div className="icons l_flex">
               <SolarBellBold className="icon" />
             </div>
-            <div className="icons l_flex">
-              <SolarCalculatorBold className="icon" />
+            <div className="icons calc_icon">
+              <ChakraProvider value={defaultSystem}>
+                <BudgetDropdown />
+              </ChakraProvider>
             </div>
-            <div className="icons l_flex">
-              <SolarCalendarBold className="icon" />
+            <div className="icons date_icon">
+              <ChakraProvider value={defaultSystem}>
+                <DateDropdown />
+              </ChakraProvider>
             </div>
             <div className="icons l_flex">
               <SolarChatDotsBold className="icon" />

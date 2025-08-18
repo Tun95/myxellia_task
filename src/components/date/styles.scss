@@ -1,0 +1,128 @@
+.popover_positioner {
+  .header {
+    min-height: 40px;
+    width: 100%;
+    background-color: var(--color-light-black);
+    padding: 5px 15px;
+    color: var(--color-white);
+    &.budget_header {
+      background-color: var(--color-deep-deep-blue);
+      padding: 15px;
+      padding-bottom: 0;
+    }
+
+    .box_title {
+      gap: 10px;
+      align-items: center;
+
+      h4 {
+        font-size: 16px;
+        font-weight: 300 !important;
+      }
+
+      .icon {
+        cursor: pointer;
+        font-size: 19px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .close_icon {
+      .icon {
+        cursor: pointer;
+        font-size: 19px;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .chakra-popover__content {
+    border-radius: 0 !important;
+    background-color: var(--color-deep-black) !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.popover_body {
+  padding: 0;
+}
+
+.date_box {
+  padding: 15px;
+
+  .custom_calendar {
+    background-color: var(--color-deep-black);
+    color: var(--color-semi-gray);
+    border: none;
+    width: 100%;
+
+    .react-calendar__navigation {
+      color: var(--color-white);
+
+      button {
+        color: inherit;
+        background: none;
+        font-size: 14px;
+        min-width: 44px;
+
+        &:disabled {
+          background-color: transparent;
+        }
+
+        &:enabled:hover,
+        &:enabled:focus {
+          background-color: var(--color-light-black);
+        }
+      }
+    }
+
+    .react-calendar__month-view__weekdays {
+      abbr {
+        text-decoration: none;
+        color: var(--color-semi-gray);
+        font-weight: 400;
+      }
+    }
+
+    .react-calendar__tile {
+      color: var(--color-semi-gray);
+      border: 1px solid var(--color-light-black);
+      padding: 5px;
+      height: 80px;
+
+      &:enabled:hover,
+      &:enabled:focus {
+        background-color: var(--color-deep-blue);
+      }
+
+      &--now {
+        background-color: var(--color-deep-blue);
+
+        &:enabled:hover,
+        &:enabled:focus {
+          background-color: var(--color-deep-blue);
+        }
+      }
+
+      &--active {
+        background-color: var(--color-deep-blue);
+        color: var(--color-white);
+
+        &:enabled:hover,
+        &:enabled:focus {
+          background-color: var(--color-deep-blue);
+        }
+      }
+    }
+
+    .react-calendar__tile--range {
+      background-color: var(--color-deep-blue);
+      color: var(--color-white);
+    }
+  }
+}

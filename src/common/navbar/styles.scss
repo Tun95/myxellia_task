@@ -2,7 +2,7 @@
   background-color: var(--color-black);
   position: sticky !important;
   top: 0 !important;
-  z-index: 2000 !important;
+  z-index: 1000 !important;
   .content {
     height: 60px;
     // padding: 5px 10px;
@@ -13,6 +13,11 @@
         width: 24px;
         height: 24px;
         cursor: pointer;
+      }
+      .date_icon,
+      .calc_icon {
+        position: relative;
+        top: 8.9px;
       }
       .user_name_icon {
         background-color: var(--color-white);

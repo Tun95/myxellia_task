@@ -1,0 +1,50 @@
+.budget_positioner {
+  .chakra-popover__content {
+    border-radius: 10px !important;
+    background-color: var(--color-white) !important;
+    border: inherit !important;
+    box-shadow: inherit !important;
+    overflow: hidden;
+  }
+
+  .list_btn {
+    padding: 15px 30px;
+    .list {
+      li {
+        gap: 8px;
+        margin-bottom: 15px;
+        .icon {
+          font-size: 23px !important;
+        }
+        .budget_title_desc {
+          h3 {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            margin-bottom: 0px;
+          }
+          p {
+            font-size: 11px;
+            color: var(--color-mid-gray);
+            line-height: 15px;
+          }
+        }
+      }
+    }
+    .btn {
+      .main_btn {
+        width: 100%;
+        height: 36px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--color-white);
+        background-color: var(--color-black);
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: var(--color-light-black);
+        }
+      }
+    }
+  }
+}
