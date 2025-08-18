@@ -23,7 +23,7 @@
   --color-red: #f04438;
   --color-blue: #4545fe;
   --color-deep-blue: #2525e6;
-   --color-deep-deep-blue: #0C2841;
+  --color-deep-deep-blue: #0c2841;
   --color-purple: #4545fe;
 
   --color-teal: #14b8a6;
@@ -130,6 +130,10 @@ button {
   outline: none;
   border: none;
   background: transparent;
+}
+
+.disabled {
+  cursor: not-allowed;
 }
 
 input {

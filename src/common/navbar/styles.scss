@@ -12,12 +12,12 @@
         color: var(--color-white);
         width: 24px;
         height: 24px;
-        cursor: pointer;
       }
       .date_icon,
       .calc_icon {
         position: relative;
         top: 8.9px;
+        cursor: pointer;
       }
       .user_name_icon {
         background-color: var(--color-white);

@@ -1,3 +1,4 @@
+import ChatBox from "@/common/chat/ChatBox";
 import Navbar from "@/common/navbar/Navbar";
 import DashboardScreen from "@/screens/dashboardscreen/DashboardScreen";
 import type { Metadata } from "next";
@@ -16,6 +17,7 @@ export default function Home() {
     <>
       <Navbar />
       <DashboardScreen />
+      <ChatBox />
     </>
   );
 }

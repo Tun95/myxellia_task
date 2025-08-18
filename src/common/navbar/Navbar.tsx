@@ -20,7 +20,7 @@ function Navbar() {
           </div>
           <div className="nav_icons a_flex">
             <div className="icons l_flex">
-              <SolarBellBold className="icon" />
+              <SolarBellBold className="icon disabled" />
             </div>
             <div className="icons calc_icon">
               <ChakraProvider value={defaultSystem}>
@@ -33,7 +33,7 @@ function Navbar() {
               </ChakraProvider>
             </div>
             <div className="icons l_flex">
-              <SolarChatDotsBold className="icon" />
+              <SolarChatDotsBold className="icon disabled" />
             </div>
             <div className="user_name_icon l_flex">
               <span className="">D</span>
