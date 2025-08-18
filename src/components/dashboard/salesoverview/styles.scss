@@ -11,6 +11,9 @@
     .top {
       border-bottom: 1px solid var(--color-stroke);
       .left {
+        h4 {
+          font-weight: 600;
+        }
         .description_text {
           margin-top: 15px;
           font-size: 14px;
@@ -100,7 +103,7 @@
           position: relative;
           overflow: hidden;
           overflow-x: auto;
-          scrollbar-width: none; 
+          scrollbar-width: none;
           &::-webkit-scrollbar {
             display: none;
           }

@@ -18,7 +18,7 @@ function DashboardScreen() {
             <div className="head mt-10">
               <h3>Welcome, Ahmed</h3>
             </div>
-            <div className="overview_contents mt-20">
+            <div className="overview_contents">
               <div className="sales_overview">
                 <SalesOverview />
               </div>

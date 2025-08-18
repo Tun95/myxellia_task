@@ -5,7 +5,10 @@
     overflow: hidden;
     .overviews {
       .head {
-        margin-top: 20px;
+        margin-top: 15px;
+        h3 {
+          font-weight: 600;
+        }
       }
 
       .overview_contents {
@@ -13,6 +16,7 @@
         grid-template-columns: 65% auto;
         gap: 20px;
         height: 100%;
+        margin-top: 15px;
         .sales_overview {
           height: 100%;
         }
