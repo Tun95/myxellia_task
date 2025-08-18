@@ -60,13 +60,52 @@
         position: relative;
         overflow: hidden;
         right: 5px;
-        .bar_chart {
+
+        .bar_chart_wrapper {
+          position: relative;
           width: 92%;
+          left: 5px;
+
+          .left_shadow,
+          .right_shadow {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            z-index: 10;
+            pointer-events: none;
+          }
+
+          .left_shadow {
+            left: 0;
+            background: linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.02) 0%,
+              rgba(0, 0, 0, 0) 100%
+            );
+          }
+
+          .right_shadow {
+            right: 0;
+            background: linear-gradient(
+              270deg,
+              rgba(0, 0, 0, 0.02) 0%,
+              rgba(0, 0, 0, 0) 100%
+            );
+          }
+        }
+
+        .bar_chart {
+          width: 100%;
           position: relative;
           overflow: hidden;
-          overflow-x: hidden;
-          left: 5px;
+          overflow-x: auto;
+          scrollbar-width: none; /* For Firefox */
+          &::-webkit-scrollbar {
+            display: none; /* For Chrome/Safari */
+          }
         }
+
         .arrow_icon_left,
         .arrow_icon_right {
           position: absolute;
@@ -101,7 +140,7 @@
         .bar_chart_arrow {
           width: 100%;
           right: 0px;
-          .bar_chart {
+          .bar_chart_wrapper {
             width: 95%;
             left: 0px;
           }

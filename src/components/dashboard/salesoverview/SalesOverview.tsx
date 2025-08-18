@@ -41,13 +41,13 @@ function SalesOverview() {
 
     scrollIntervalRef.current = setInterval(() => {
       if (chartContainerRef.current) {
-        const scrollAmount = 10; // Adjust this value to change scroll speed
+        const scrollAmount = 10;
         chartContainerRef.current.scrollBy({
           left: direction === "left" ? -scrollAmount : scrollAmount,
           behavior: "smooth",
         });
       }
-    }, 50); // Adjust this value to change scroll smoothness
+    }, 50);
   };
 
   const stopScrolling = () => {
@@ -92,10 +92,14 @@ function SalesOverview() {
             >
               <MaterialSymbolsArrowBack2 className="icon" />
             </div>
-            <div className="bar_chart" ref={chartContainerRef}>
-              <ChakraProvider value={defaultSystem}>
-                <BarChartComponent />
-              </ChakraProvider>
+            <div className="bar_chart_wrapper">
+              {canScrollLeft && <div className="left_shadow"></div>}
+              <div className="bar_chart" ref={chartContainerRef}>
+                <ChakraProvider value={defaultSystem}>
+                  <BarChartComponent />
+                </ChakraProvider>
+              </div>
+              {canScrollRight && <div className="right_shadow"></div>}
             </div>
             <div
               className={`arrow_icon_right l_flex ${
