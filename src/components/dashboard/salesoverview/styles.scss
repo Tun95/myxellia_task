@@ -80,7 +80,7 @@
             left: 0;
             background: linear-gradient(
               90deg,
-              rgba(0, 0, 0, 0.02) 0%,
+              rgba(0, 0, 0, 0.025) 0%,
               rgba(0, 0, 0, 0) 100%
             );
           }
@@ -89,7 +89,7 @@
             right: 0;
             background: linear-gradient(
               270deg,
-              rgba(0, 0, 0, 0.02) 0%,
+              rgba(0, 0, 0, 0.025) 0%,
               rgba(0, 0, 0, 0) 100%
             );
           }
@@ -100,9 +100,9 @@
           position: relative;
           overflow: hidden;
           overflow-x: auto;
-          scrollbar-width: none; /* For Firefox */
+          scrollbar-width: none; 
           &::-webkit-scrollbar {
-            display: none; /* For Chrome/Safari */
+            display: none;
           }
         }
 

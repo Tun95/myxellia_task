@@ -1,4 +1,3 @@
-import Navbar from "@/common/navbar/Navbar";
 import "./styles.scss";
 import Menubar from "@/common/menubar/Menubar";
 import SalesOverview from "@/components/dashboard/salesoverview/SalesOverview";
@@ -10,9 +9,6 @@ function DashboardScreen() {
   return (
     <div className="dashboard_screen">
       <div className="dashboard_content">
-        <div className="nav">
-          <Navbar />
-        </div>
         <div className="menu">
           <Menubar />
         </div>
