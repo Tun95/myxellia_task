@@ -1,4 +1,9 @@
-import { MageCalculator, SolarCalculatorBold } from "@/assets/icons/icon";
+import {
+  BasilSettingsAdjustOutline,
+  IconParkOutlineTrend,
+  ProiconsBarGraph,
+  SolarCalculatorBold,
+} from "@/assets/icons/icon";
 import "./styles.scss";
 import { Popover, Portal } from "@chakra-ui/react";
 import budget from "@/assets/images/budget.png";
@@ -23,7 +28,7 @@ function BudgetDropdown() {
                     <ul className="list">
                       <li className="a_flex">
                         <span className="icons">
-                          <MageCalculator className="icon" />
+                          <BasilSettingsAdjustOutline className="icon" />
                         </span>
                         <span className="budget_title_desc">
                           <h3>Set up annual budgets by account category</h3>
@@ -35,7 +40,7 @@ function BudgetDropdown() {
                       </li>
                       <li className="a_flex">
                         <span className="icons">
-                          <MageCalculator className="icon" />
+                          <IconParkOutlineTrend className="icon" />
                         </span>
                         <span className="budget_title_desc">
                           <h3>Track actuals vs budget in real time</h3>
@@ -47,7 +52,7 @@ function BudgetDropdown() {
                       </li>
                       <li className="a_flex">
                         <span className="icons">
-                          <MageCalculator className="icon" />
+                          <ProiconsBarGraph className="icon" />
                         </span>
                         <span className="budget_title_desc">
                           <h3>Adjust figures and forecast with ease</h3>

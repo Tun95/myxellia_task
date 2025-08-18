@@ -3,15 +3,15 @@
 import {
   FluentPerson32Regular,
   FluentPerson32Filled,
-  IonNewspaperOutline,
-  IonNewspaper,
   IcSharpHomeRepairService,
-  MaterialSymbolsTextAdOutline,
-  MaterialSymbolsTextAd,
   MingcuteHome4Fill,
   SolarMagniferOutline,
   MaterialSymbolsHomeRepairServiceOutlineSharp,
   MingcuteHome4Line,
+  PhScrollFill,
+  PhArticle,
+  PhArticleFill,
+  PhScrollLight,
 } from "@/assets/icons/icon";
 import "./styles.scss";
 import Link from "next/link";
@@ -42,14 +42,14 @@ function Menubar() {
       path: "/users",
     },
     {
-      outlineIcon: <MaterialSymbolsTextAdOutline className="menu_icon" />,
-      boldIcon: <MaterialSymbolsTextAd className="menu_icon" />,
+      outlineIcon: <PhArticle className="menu_icon" />,
+      boldIcon: <PhArticleFill className="menu_icon" />,
       label: "Request",
       path: "/request",
     },
     {
-      outlineIcon: <IonNewspaperOutline className="menu_icon" />,
-      boldIcon: <IonNewspaper className="menu_icon" />,
+      outlineIcon: <PhScrollLight className="menu_icon" />,
+      boldIcon: <PhScrollFill className="menu_icon" />,
       label: "Applications",
       path: "/applications",
     },

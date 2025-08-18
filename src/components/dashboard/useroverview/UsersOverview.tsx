@@ -1,8 +1,8 @@
 import { formatNumberCompact } from "@/utilities/Util";
 import "./styles.scss";
 import {
-  FluentPerson32Regular,
   IcBaselineKeyboardArrowRight,
+  SolarUserRoundedLinear,
 } from "@/assets/icons/icon";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ function UsersOverview() {
         <div className="top c_flex">
           <div className="left">
             <div className="head_icon a_flex">
-              <FluentPerson32Regular className="icon" />
+              <SolarUserRoundedLinear className="icon" />
               <p>Users Overview</p>
             </div>
           </div>

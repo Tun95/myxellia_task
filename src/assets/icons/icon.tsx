@@ -203,6 +203,13 @@ export function FluentPerson32Regular(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+// PROFILE
+export function SolarUserRoundedLinear(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>{/* Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ */}<g fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="6" r="4" /><ellipse cx="12" cy="17" rx="7" ry="4" /></g></svg>
+  )
+}
+
 // USER FILLED
 export function FluentPerson32Filled(props: SVGProps<SVGSVGElement>) {
   return (
@@ -222,21 +229,10 @@ export function FluentPerson32Filled(props: SVGProps<SVGSVGElement>) {
 }
 
 // TEXT FILLED
-export function MaterialSymbolsTextAd(props: SVGProps<SVGSVGElement>) {
+export function PhArticleFill(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-      {...props}
-    >
-      <path
-        fill="currentColor"
-        d="M2 6v12h20V6zm2 2h16v8H4zm2 2v4h3v-4zm5 0v1h6v-1zm0 2v2h6v-2z"
-      />
-    </svg>
-  );
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...props}>{/* Icon from Phosphor by Phosphor Icons - https://github.com/phosphor-icons/core/blob/main/LICENSE */}<path fill="currentColor" d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m-40 128H80a8 8 0 0 1 0-16h96a8 8 0 0 1 0 16m0-32H80a8 8 0 0 1 0-16h96a8 8 0 0 1 0 16m0-32H80a8 8 0 0 1 0-16h96a8 8 0 0 1 0 16" /></svg>
+  )
 }
 
 // JOB LISTING OUTLINE
@@ -280,22 +276,10 @@ export function IcSharpHomeRepairService(props: SVGProps<SVGSVGElement>) {
 }
 
 // TEXT OUTLINE ICON
-export function MaterialSymbolsTextAdOutline(props: SVGProps<SVGSVGElement>) {
+export function PhArticle(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-      {...props}
-    >
-      {/* Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE */}
-      <path
-        fill="currentColor"
-        d="M5 17h14v-2H5zm0-4h14v-2H5zm0-4h10V7H5zM4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V6H4zm0 0V6z"
-      />
-    </svg>
-  );
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...props}>{/* Icon from Phosphor by Phosphor Icons - https://github.com/phosphor-icons/core/blob/main/LICENSE */}<path fill="currentColor" d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 160H40V56h176zM184 96a8 8 0 0 1-8 8H80a8 8 0 0 1 0-16h96a8 8 0 0 1 8 8m0 32a8 8 0 0 1-8 8H80a8 8 0 0 1 0-16h96a8 8 0 0 1 8 8m0 32a8 8 0 0 1-8 8H80a8 8 0 0 1 0-16h96a8 8 0 0 1 8 8" /></svg>
+  )
 }
 
 // TEXT BOLD ICON
@@ -569,4 +553,40 @@ export function SolarHomeOutline(props: SVGProps<SVGSVGElement>) {
       />
     </svg>
   );
+}
+
+// SCROLL ICON 
+export function PhScrollLight(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...props}>{/* Icon from Phosphor by Phosphor Icons - https://github.com/phosphor-icons/core/blob/main/LICENSE */}<path fill="currentColor" d="M98 136a6 6 0 0 1 6-6h64a6 6 0 0 1 0 12h-64a6 6 0 0 1-6-6m6-26h64a6 6 0 0 0 0-12h-64a6 6 0 0 0 0 12m126 82a30 30 0 0 1-30 30H88a30 30 0 0 1-30-30V64a18 18 0 0 0-36 0c0 6.76 5.58 11.19 5.64 11.23a6 6 0 1 1-7.24 9.57C20 84.48 10 76.85 10 64a30 30 0 0 1 30-30h136a30 30 0 0 1 30 30v106h10a6 6 0 0 1 3.6 1.2c.4.32 10.4 7.95 10.4 20.8m-124 0c0-6.76-5.59-11.19-5.64-11.23A6 6 0 0 1 104 170h90V64a18 18 0 0 0-18-18H64a29.82 29.82 0 0 1 6 18v128a18 18 0 0 0 36 0m112 0a14.94 14.94 0 0 0-4.34-10h-97.78a24.8 24.8 0 0 1 2.12 10a29.87 29.87 0 0 1-6 18h88a18 18 0 0 0 18-18" /></svg>
+  )
+}
+
+//SCROLL BOLD
+export function PhScrollFill(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...props}>{/* Icon from Phosphor by Phosphor Icons - https://github.com/phosphor-icons/core/blob/main/LICENSE */}<path fill="currentColor" d="M220.8 169.6a8 8 0 0 0-4.8-1.6h-8V64a32 32 0 0 0-32-32H40A32 32 0 0 0 8 64c0 13.61 10.05 21.54 11.2 22.4A7.9 7.9 0 0 0 24 88a8 8 0 0 0 4.87-14.33C28.83 73.62 24 69.74 24 64a16 16 0 0 1 32 0v128a32 32 0 0 0 32 32h112a32 32 0 0 0 32-32c0-13.61-10-21.54-11.2-22.4M104 96h64a8 8 0 0 1 0 16h-64a8 8 0 0 1 0-16m-8 40a8 8 0 0 1 8-8h64a8 8 0 0 1 0 16h-64a8 8 0 0 1-8-8m104 72h-92.29a31.8 31.8 0 0 0 4.29-16a27 27 0 0 0-1.21-8h102a12.58 12.58 0 0 1 3.23 8A16 16 0 0 1 200 208" /></svg>
+  )
+}
+
+
+//SETTING ICON
+export function BasilSettingsAdjustOutline(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>{/* Icon from Basil by Craftwork - https://creativecommons.org/licenses/by/4.0/ */}<path fill="currentColor" fillRule="evenodd" d="M13.354 8.75H4a.75.75 0 0 1 0-1.5h9.354a2.751 2.751 0 0 1 5.293 0H20a.75.75 0 0 1 0 1.5h-1.354a2.751 2.751 0 0 1-5.292 0M14.75 8a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0m-4.103 8.75H20a.75.75 0 0 0 0-1.5h-9.353a2.751 2.751 0 0 0-5.293 0H4a.75.75 0 0 0 0 1.5h1.354a2.751 2.751 0 0 0 5.292 0M6.75 16a1.25 1.25 0 1 1 2.5 0a1.25 1.25 0 0 1-2.5 0" clipRule="evenodd" /></svg>
+  )
+}
+
+// TREND UP
+export function IconParkOutlineTrend(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48" {...props}>{/* Icon from IconPark Outline by ByteDance - https://github.com/bytedance/IconPark/blob/master/LICENSE */}<g fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="4"><path d="M39 6H9a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Z" /><path strokeLinecap="round" d="m13.44 29.835l5.657-5.657l4.388 4.377L34 18" /><path strokeLinecap="round" d="M26 18h8v8" /></g></svg>
+  )
+}
+
+// ALIGN UP
+export function ProiconsBarGraph(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>{/* Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE */}<g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"><path d="M2.75 21h18.5" /><rect width="6" height="10" x="4" y="7.5" rx="2" /><rect width="6" height="15" x="14" y="2.5" rx="2" /></g></svg>
+  )
 }
