@@ -41,6 +41,8 @@ function DateDropdown() {
                       onChange={onChange}
                       value={value}
                       className="custom_calendar"
+                      prev2Label={null} 
+                      next2Label={null} 
                     />
                   </div>
                 </Popover.Body>
